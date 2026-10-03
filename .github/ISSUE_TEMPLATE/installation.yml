@@ -1,0 +1,74 @@
+name: 安装与启动问题
+description: 反馈安装、更新、资源准备、启动或进度停住的问题
+title: "[安装/启动] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        推荐MuMu的Android 12环境，安装请预留10GB以上空间。
+        按看到的页面和操作描述即可，不要求卸载、清数据或重置账号。
+        可附截图或短视频；请勿上传APK、OBB、资源、存档或账号密码。
+  - type: input
+    id: version
+    attributes:
+      label: 安装包或修复版本标识
+      description: 可填写安装包名称或页面显示的版本；找不到可写“不清楚”。
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 运行环境
+      options:
+        - MuMu模拟器
+        - 雷电模拟器
+        - 其他模拟器
+        - 安卓实体设备
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: 安卓系统版本及模拟器版本
+      placeholder: "例如：Android 12 / Android 15；模拟器版本号可补充"
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 本次安装方式
+      options:
+        - 全新安装
+        - 保留旧版覆盖更新
+        - 卸载旧版后重新安装
+        - 已安装后的再次启动
+        - 不清楚
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 当前页面与异常现象
+      description: 写明屏幕显示文字、进度状态和大致等待时间，可以拖入截图。
+    validations:
+      required: true
+  - type: dropdown
+    id: confirmation
+    attributes:
+      label: 是否出现安卓系统的安装或更新确认
+      options:
+        - 已出现并确认
+        - 出现过但未完成确认
+        - 一直未出现
+        - 不清楚
+  - type: textarea
+    id: steps
+    attributes:
+      label: 安装或启动的操作经过
+      description: 按顺序描述操作，以及从哪一步开始停住或异常。
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 其他补充
+      description: 可填写电脑与模拟器的大致可用空间、是否重复发生及相关报错。无需提供技术分析。
