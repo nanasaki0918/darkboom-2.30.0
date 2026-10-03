@@ -10,10 +10,8 @@
 
 - [安装、启动或更新问题](https://github.com/nanasaki0918/darkboom-2.30.0/issues/new?template=installation.yml)
 - [游戏内Bug反馈](https://github.com/nanasaki0918/darkboom-2.30.0/issues/new?template=bug_report.yml)
-- [游玩体验问卷](https://github.com/nanasaki0918/darkboom-2.30.0/issues/new?template=experience_survey.yml)
 - [查看已有反馈和处理进度](https://github.com/nanasaki0918/darkboom-2.30.0/issues)
 
-问卷用于收集整体体验、游玩方式、玩法偏好和改进建议。填写需登录GitHub，回答会公开显示；无需填写真实姓名、手机号或账号密码。安装和具体功能异常请使用对应Bug表单。
 
 请先搜索已有问题；遇到相同情况，可以在原问题下补充版本、环境和复现信息。一个Issue尽量描述一个问题。
 
