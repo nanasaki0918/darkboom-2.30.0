@@ -1,0 +1,10 @@
+# This repository accepts only feedback documentation and YAML issue forms.
+*
+!.gitignore
+!README.md
+!CONTRIBUTING.md
+!.github/
+.github/*
+!.github/ISSUE_TEMPLATE/
+.github/ISSUE_TEMPLATE/*
+!.github/ISSUE_TEMPLATE/*.yml
