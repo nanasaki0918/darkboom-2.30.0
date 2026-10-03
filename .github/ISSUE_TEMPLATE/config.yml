@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 反馈须知与已有问题
+    url: https://github.com/nanasaki0918/darkboom-2.30.0#readme
+    about: 先阅读版本、附件范围和反馈说明，再选择对应表单。
