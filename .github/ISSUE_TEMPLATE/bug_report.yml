@@ -1,0 +1,81 @@
+name: 游戏内Bug反馈
+description: 反馈2.30.0玩家修复版的游戏内异常
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请按实际体验填写，不需要技术诊断。一个Issue描述一个问题。
+        可附截图或短视频；请勿上传游戏安装包、资源、存档、数据库或账号密码。
+  - type: input
+    id: version
+    attributes:
+      label: 游戏修复版本
+      description: 尽量填写登录页显示的完整修复版本标识，找不到可写“不清楚”。
+      placeholder: "2.30.0 / 登录页修复版本标识"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 运行环境
+      options:
+        - MuMu模拟器
+        - 雷电模拟器
+        - 其他模拟器
+        - 安卓实体设备
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: 安卓系统版本及模拟器版本
+      placeholder: "例如：Android 12，MuMu版本号；不清楚可说明"
+  - type: dropdown
+    id: module
+    attributes:
+      label: 问题所在功能
+      options:
+        - 登录与账号
+        - 文字语言与界面
+        - 招募与角色收藏
+        - 指挥官成长与邮件奖励
+        - 主线与副本战斗
+        - 大型活动
+        - 活动小游戏
+        - 后宅与家具
+        - 人偶养成与装备
+        - 日常任务与商店
+        - 音乐与语音
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 实际出现了什么问题
+      description: 写明所在页面、提示内容或异常现象。可以直接拖入相关截图。
+      placeholder: "例如：完成操作返回大厅，再次进入后进度没有保存。"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作步骤
+      description: 描述问题发生前的操作；进入页面就发生时，直接说明即可。
+      placeholder: |
+        1. 进入……
+        2. 点击或完成……
+        3. 此时出现……
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你期待出现的结果
+  - type: textarea
+    id: extra
+    attributes:
+      label: 其他补充
+      description: 可说明Admin收藏档或新账号、是否每次发生，以及相关短视频或脱敏报错。无需提供账号密码。
